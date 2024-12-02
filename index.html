@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill the survey form below</p>
+    <form id="survey-form" method="post">
+      <label id="name-label">Name 
+        <input placeholder="Enter your name" id="name" type="text" required/>
+      </label>
+      <label id="email-label">Email 
+        <input placeholder="Enter your email" id="email" type="email" required/>
+      </label>
+      <label id="number-label">Age 
+        <input placeholder="Age" id="number" type="number" min="13" max="65"/>
+      </label>
+      
+      <label id="dropdown-label">What is your specialization?
+        <select id="dropdown">
+          <option>Software Developer</option>
+          <option>Security Analyst</option>
+          <option>Systems Administrator</option>
+          <option>Data Analyst</option>
+        </select>
+      </label>
+
+      <label id="radio-label">How is the work environment? 
+        <input id="radio" value="option1" name="option" type="radio">Excellent</input>
+        <input id="radio" value="option2" name="option" type="radio">Okay</input>
+        <input id="radio" value="option3" name="option" type="radio">Poor</input>
+      </label>
+
+      <label id="checkbox-label"> What would you recommend to improve work productivity?
+        <input id="checkbox" type="checkbox" value="checkbox1">Weekly Forums</input>
+        <input id="checkbox" type="checkbox" value="checkbox2">Additional Courses</input>
+        <input id="checkbox" type="checkbox" value="checkbox3">Team Activities</input>
+      </label>
+      
+      <textarea type="text" placeholder="Comments"></textarea>
+
+      <button id="submit">Submit</button
+    </form>
+  </body>
+</html>
